@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nginx-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my_nginx_web
+    ports:
+      - "8084:80"
+
+
